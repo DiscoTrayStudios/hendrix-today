@@ -7,7 +7,6 @@ import 'package:hendrix_today_app/screens/resource_screen.dart';
 import 'package:hendrix_today_app/screens/search_screen.dart';
 import 'package:hendrix_today_app/screens/home_screen.dart';
 
-import 'package:url_launcher/url_launcher.dart';
 import 'package:provider/provider.dart';
 
 class ScreenContainer extends StatefulWidget {

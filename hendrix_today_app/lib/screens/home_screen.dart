@@ -19,8 +19,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     final appState = Provider.of<AppState>(context);
     final homePageEvents = appState.events
       .where((Event e) =>
-        e.eventType.matchesFilter(appState.eventTypeFilter) &&
-        e.inPostingRange(DateTime.now()),)
+        e.eventType.matchesFilter(appState.eventTypeFilter))
       .toList();
 
     return SizedBox(

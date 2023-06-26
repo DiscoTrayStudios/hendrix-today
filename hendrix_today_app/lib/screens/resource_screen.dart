@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hendrix_today_app/widgets/resource_button.dart';
 
-import 'package:url_launcher/url_launcher.dart';
-
-import '../widgets/resource_dialog.dart';
-
 class ResourcesScreen extends StatefulWidget {
   const ResourcesScreen({super.key});
 
