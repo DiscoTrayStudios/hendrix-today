@@ -18,9 +18,9 @@ class EventCalendar extends StatefulWidget {
 //creation of the TableCalendar
 //code obtained from TableCalendar repo: https://github.com/aleksanderwozniak/table_calendar
 class _EventCalendarState extends State<EventCalendar> {
-  DateTime _focusedDay = DateTime.now();
-  DateTime calendarRoot = DateTime.now();
-  DateTime _selectedDay = DateTime.now();
+  DateTime _focusedDay = DateTime(2022, 11, 7);
+  DateTime calendarRoot = DateTime(2022, 11, 7);
+  DateTime _selectedDay = DateTime(2022, 11, 7);
 
   List<Event> _applyEventFilters(AppState appState, DateTime day) =>
     appState.events
@@ -47,7 +47,7 @@ class _EventCalendarState extends State<EventCalendar> {
 
   @override
   Widget build(BuildContext context) {
-    final today = DateTime.now();
+    final today = DateTime(2022, 11, 7);
     final calendarStartDate = DateTime(today.year - 2, today.month, today.day);
     final calendarEndDate = DateTime(today.year, today.month + 1, today.day);
     return SizedBox(
