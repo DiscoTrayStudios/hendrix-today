@@ -41,7 +41,7 @@ class ToggleBar extends StatelessWidget {
             title: AutoSizeText(
               maxFontSize: 20,
               titleString,
-              style: Theme.of(context).textTheme.displaySmall,
+              style: Theme.of(context).textTheme.displayMedium,
               textAlign: TextAlign.center,
             ),
             value: darkmode,
