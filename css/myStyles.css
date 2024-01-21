@@ -1,0 +1,45 @@
+.background {
+    background: linear-gradient( #ff6600, black);
+}
+
+.header {
+    background-color: white;
+}
+
+h1 {
+    color: #ff6600;
+    font-size: 60px;
+}
+
+h2 {
+    color: black;
+    font-size: 25px;
+}
+
+p {
+    color: black;
+    font-size: 50;
+    font-weight:600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;  
+}
+.space{
+    padding:25px;
+}
+
+.rcorners{
+    border-radius: 25px;
+    background: white;
+  }
+
+.white{
+    background-color: rgba(255, 255, 255,0.7);
+}
+.body-padding{
+    padding:25px;
+}
