@@ -1,5 +1,8 @@
 .background {
-    background: linear-gradient(#ff6600, black);
+    background: linear-gradient(#E96B10, black);
+}
+.body-background{
+    background-color: rgba(36,36,36);
 }
 
 .header {
@@ -9,6 +12,7 @@
 h1 {
     color: #ff6600;
     font-size: 60px;
+    font-weight: 100;
 }
 
 h2 {
@@ -25,6 +29,7 @@ p {
     margin: auto;
     width: 50%;
     padding: 10px;
+    text-align: center;
 }
 
 .space{
@@ -35,13 +40,14 @@ p {
 }
 
 .rcorners {
-    border-radius: 25px;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
     background: white;
 }
 
-.white {
-    background-color: rgba(255, 255, 255, 0.75);
-    
+.box-background{
+    background-color: white;
 }
 
 .body-padding {
@@ -49,15 +55,10 @@ p {
     padding-right: 300px;
 }
 
-.text-padding {
-   /* padding-left: 50px;
-    padding-right: 50px;
-    */
-}
 
 /* image enlargement animation 
 source code found here: https://www.educative.io/answers/how-to-enlarge-an-image-on-hover-in-html
-*/
+
 .image_animation {
     transition: transform .2s;
     width: 50px;
@@ -68,6 +69,7 @@ source code found here: https://www.educative.io/answers/how-to-enlarge-an-image
 .image_animation:hover {
     transform: scale(1.25);
 }
+*/
 
 .row {
     display: flex;
