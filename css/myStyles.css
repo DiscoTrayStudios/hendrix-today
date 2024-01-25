@@ -33,6 +33,13 @@ p {
     margin-left:50%;
     margin-right: 50%; 
 }
+.body-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:25%;
+    margin-right: 25%; 
+}
 .body-right{
     display: flex;
     align-items: center;
@@ -50,7 +57,7 @@ p {
 
 
 .space{
-    padding: 150px;
+    padding: 50px;
 }
 .top-space{
     padding-top: 50px;
