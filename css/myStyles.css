@@ -1,29 +1,35 @@
 .background {
     background: linear-gradient(#E96B10, black);
+    display: flex;
 }
 .body-background{
     background-color: rgba(36,36,36);
+    display:flex;
 }
 
 .header {
     background-color: white;
+    display:flex;
 }
 
 h1 {
     color: #ff6600;
     font-size: 60px;
     font-weight: 100;
+    display:flex;
 }
 
 h2 {
     color: black;
     font-size: 25px;
+    display:flex;
 }
 
 p {
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
     color:white;
+    display:flex;
 }
 
 .center {
@@ -55,12 +61,26 @@ p {
     margin-right: 50%;
 }
 
+.text-padding{
+    display: flex;
+    margin-left:25px;
+    margin-right: 25px;
+}
 
 .space{
+    display: flex;
     padding: 50px;
+}
+.tiny-space{
+    display:flex;
+    padding:5px;
+}
+.tiny-space-right{
+    margin-right: 10px;
 }
 .top-space{
     padding-top: 50px;
+    
 }
 /*white box around phone image*/
 .rcorners { 
@@ -68,11 +88,13 @@ p {
     height: auto;
     border-radius: 35px;
     background: white;
+    
 }
 
 img{
     max-width: 300px;
     min-width: auto;
+    
 }
 /*
 .body-padding {
