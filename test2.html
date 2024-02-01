@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Landing Page</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .title-header {
+            font-size: 70px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .header{
+            font-size: 45px;
+            margin-bottom: 10px;
+            color: #ff6600;
+        }
+
+        .paragraph {
+            font-size: 20px;
+            color: white;
+            
+        }
+
+        .image {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        body {
+            background-color: #ff6600;
+        }
+
+        .body-background {
+            background-color: rgba(36, 36, 36);
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>hendrix today app</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat+Alternates:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat+Alternates:wght@500&family=Urbanist:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            
+            <div class="column" style="align-content: normal;text-align:right;">
+                <h1 class="title-header" style="font-family: Alfa Slab One;">hendrix today app</h1>
+                <p style="font-size: 25px;color:white"><em>stay up to date with Hendrix College</em></p>
+            </div>
+            <div class="column" style="align-content: center;text-align: left;">
+                <img class="image" src="assets/img/ic_launcher.png" alt="App Screenshot" style="width:300px">
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="space"></div>
+            </div>
+            <div class="column">
+                <div id="icons">
+                    <a href="https://apps.apple.com/us/app/good-vibes-mood-tracker/id1587237472" target="_blank">
+                        <img src="assets/img/SVG/apple-badge.svg" alt="Screenshot" class="apple" width="200" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="column">
+                <a href="https://play.google.com/store/apps/details?id=io.github.discotraystudios.good_vibes"
+                    target="_blank">
+                    <img src="assets/img/google-play-badge.png" alt="Screenshot" class="google" width="225" />
+                </a>
+            </div>
+
+        </div>
+        <div class="body-background">
+            <div class="row">
+                <div class="column"  style="align-content:normal;text-align:right;">
+                    <h2 class="header" style="font-family: Alfa Slab One;">Home Page</h2>
+                    <p class="paragraph" style="margin-left:50%; font-family:Merriweather Sans;">Welcome to the new Hendrix Today app. Here you can find all the new and
+                        upcoming events happening at Hendrix College.</p>
+                </div>
+                <div class="column"  style="align-content:normal;text-align:left;">
+                    <img class="image" src="assets/screenshots/screenshot1.png" alt="Feature Image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column"  style="align-content:normal;text-align:right;">
+                    <img class="image" src="assets/screenshots/screenshot4.png" alt="App Screenshot">
+                </div>
+                <div class="column"  style="align-content:normal;text-align:left;">
+                    <h2 class="header" style="font-family: Alfa Slab One;">Event Description</h2>
+                    <p class="paragraph" style="margin-right:50%; font-family:Merriweather Sans;">Click on an event to see the whole description. You can even share events with
+                        friends or add it to your phone's calendar.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column"  style="align-content:normal;text-align:right;">
+                    <h2 class="header" style="font-family: Alfa Slab One;">Calendar Page</h2>
+                    <p class="paragraph" style="margin-left:50%; font-family:Merriweather Sans;">Use the calendar page to look ahead and see what's happeening that month.</p>
+                </div>
+                <div class="column" style="align-content:normal;text-align: left;">
+                    <img class="image" src="assets/screenshots/screenshot2.png" alt="Testimonial Image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column" style="align-content:normal;text-align:right;">
+                    <img class="image" src="assets/screenshots/screenshot3.png" alt="App Screenshot">
+                </div>
+                <div class="column"  style="align-content:normal;text-align:left;">
+                    <h2 class="header" style="font-family: Alfa Slab One;">Resources Page</h2>
+                    <p class="paragraph" style="margin-right:50%; font-family:Merriweather Sans;">The Resource's Page has quick options that can be used to submit your own event
+                        to Hendrix Today, reserving a room on campus, viewing the daily Cafeteria menu, contacting
+                        Public Safety, or viewing a map of the campus.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

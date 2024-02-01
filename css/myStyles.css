@@ -12,6 +12,7 @@
     display:flex;
 }
 
+
 h1 {
     color: #ff6600;
     font-size: 60px;
@@ -39,6 +40,13 @@ p {
     margin-left:50%;
     margin-right: 50%; 
 }
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:30%;
+    margin-right:30%;
+}
 .body-center{
     display: flex;
     align-items: center;
@@ -50,7 +58,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left:50%;
+    margin-left:25%;
     margin-right: 0%;
 }
 .body-left{
@@ -63,8 +71,8 @@ p {
 
 .text-padding{
     display: flex;
-    margin-left:25px;
-    margin-right: 25px;
+   
+    
 }
 
 .space{
@@ -75,9 +83,12 @@ p {
     display:flex;
     padding:5px;
 }
+.med-space{
+    display:flex;
+    padding:20px;
+}
 .top-space{
     padding-top: 50px;
-    
 }
 /*white box around phone image*/
 .rcorners { 
@@ -85,12 +96,14 @@ p {
     height: auto;
     border-radius: 35px;
     background: white;
-    
+    display:flex;
 }
+
 
 img{
     max-width: 300px;
     min-width: auto;
+    height: auto;
     
 }
 /*
