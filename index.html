@@ -2,15 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
     <title>hendrix today app</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .title-header {
+            font-size: 70px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .header {
+            font-size: 45px;
+            margin-bottom: 10px;
+            color: #ff6600;
+        }
+
+        .paragraph {
+            font-size: 20px;
+            color: white;
+        }
+
+        .image {
+            max-width: 300px;
+            height: auto;
+        }
+
+        body {
+            background-color: #ff6600;
+        }
+
+        .body-background {
+            background-color: rgba(36, 36, 36);
+        }
+
+        .rcorners {
+            width: 305px;
+            height: auto;
+            border-radius: 35px;
+            background: white;
+
+        }
+
+        .space {
+            padding: 100px;
+        }
+
+        .small-space {
+            padding: 50px;
+        }
+    </style>
+
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
         rel="stylesheet" />
@@ -22,116 +85,126 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat+Alternates:wght@500&display=swap"
+        rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Days+One&family=Lemon&family=Montserrat+Alternates:wght@500&family=Shrikhand&family=Urbanist:wght@500&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-    <!-- Background Video
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
-        -->
-    <!-- Masthead-->
-    <header>
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <img src="assets/img/bland-logo.png" width="200">
+<body  style="background-color: #ff6600;">
+    <div class="container">
+        <div class="space"></div>
+        <div class="row">
 
-
-                    <h1 style="font-family: Alfa Slab One;"> hendrix today app</h1>
-
-                    <h2 class="fst-italic lh-1 mb-4">Stay up to date with events at Hendrix College</h2>
-                    <img
-                        src="https://github.com/DiscoTrayStudios/hendrix-today/blob/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true">
-                    <!--from the Goodvibes app. Will need to update them when we have the url for HDX Today app -->
-                    <div class="column">
-                        <div id="icons">
-                            <a href="https://apps.apple.com/us/app/good-vibes-mood-tracker/id1587237472"
-                                target="_blank">
-                                <img src="assets/img/SVG/apple-badge.svg" alt="Screenshot" class="apple" />
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=io.github.discotraystudios.good_vibes"
-                                target="_blank">
-                                <img src="assets/img/google-play-badge.png" alt="Screenshot" class="google"
-                                    width="120" />
-                            </a>
-                        </div>
-                    </div>
+            <div class="column" style="align-content: normal;text-align:right;">
+                <h1 class="title-header" style="font-family: Alfa Slab One;">hendrix today app</h1>
+                <p style="font-size: 25px;color:white; font-family: Merriweather Sans"><em>stay up to date with Hendrix College</em></p>
+            </div>
+            <div class="column" style="align-content: center;text-align: left;">
+                <div class="rcorners">
+                    <img class="image" src="assets/img/ic_launcher.png" alt="App Screenshot" style="width:300px">
+                </div>
+                <div style="padding-left:40px;padding-top:10px">
+                    <a href="https://discotraystudios.github.io"
+                        style="color:white; font-size:20px; text-decoration:none; align-items: center; font-family:Concert One">
+                        a disco tray studios app
+                    </a>
                 </div>
             </div>
 
         </div>
 
-    </header>
-    <main>
-
-        <div class="screenshots">
-
-            <div style="display:flex; flex-direction:row;">
-
-                <img src="assets/screenshots/screenshot1.png" alt="your-image-description" width="200">
-                <div>
-                    <p classname="offset-4"> Welcome to the new Hendrix Today app. Here you can find all the new
-                        and upcoming events happening at Hendrix College.
-                    </p>
-                </div>
+        <div class="row" style="padding-top:20px">
+            <div class="column">
+                <div class="space"></div>
             </div>
-
-            <div style="display:flex; flex-direction:row;">
-                <div>
-                    <p classname="caption"> Click on an event to see the whole description.
-                        You can even share events with friends or add it to your phone's calendar.
-                    </p>
-                </div>
-                <img src="assets/screenshots/screenshot4.png" alt="your-image-description" width="200">
-
-            </div>
-            <div style="display:flex; flex-direction:row;">
-                <img src="assets/screenshots/screenshot2.png" alt="your-image-description" width="200">
-                <div>
-                    <p classname="caption"> Use the calendar page to look ahead and see what's happeening
-                        that month.
-                    </p>
+            <div class="column">
+                <div id="icons">
+                    <a href="https://apps.apple.com/us/app/hendrix-today/id6455126560" target="_blank">
+                        <img src="assets/img/SVG/apple-badge.svg" alt="Screenshot" class="apple" width="200" />
+                    </a>
                 </div>
 
-
             </div>
-            <div style="display:flex; flex-direction:row;">
-
-
-                <div>
-                    <p classname="caption"> The Resource's Page has quick options that can be used to submit
-                        your own event to Hendrix Today,
-                        reserving a room on campus, viewing the daily Cafeteria menu,
-                        contacting Public Safety, or viewing a map of the campus.
-                    </p>
-                </div>
-                <img src="assets/screenshots/screenshot3.png" alt="your-image-description" width="200">
+            <div class="column">
+                <a href="https://play.google.com/store/apps/details?id=io.github.discotraystudios.good_vibes"
+                    target="_blank">
+                    <img src="assets/img/google-play-badge.png" alt="Screenshot" class="google" width="225" />
+                </a>
             </div>
-
+            <div class="space"></div>
 
         </div>
-    </main>
+        <div class="body-background">
+            <div class="small-space"></div>
+            <div class="row">
+                <div class="column" style="align-content:normal;text-align:right;">
+                    <h2 class="header" style="font-family: Concert One;">home page</h2>
+                    <p class="paragraph" style="margin-left:50%; font-family:Merriweather Sans;">Welcome to the new
+                        Hendrix Today app! Here you can find all the new and
+                        upcoming events happening at Hendrix College!</p>
+                </div>
+                <div class="column" style="align-content:normal;text-align:left;">
+                    <img class="image" src="assets/screenshots/screenshot1.png" alt="Feature Image">
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="column" style="align-content:normal;text-align:right;">
+                    <img class="image" src="assets/screenshots/screenshot4.png" alt="App Screenshot">
+                </div>
+                <div class="column" style="align-content:normal;text-align:left;">
+                    <h2 class="header" style="font-family: Concert One;">event description</h2>
+                    <p class="paragraph" style="margin-right:50%; font-family:Merriweather Sans;">Click on an event to
+                        see the whole description. You can even share events with
+                        friends or add it to your phone's calendar!</p>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="column" style="align-content:normal;text-align:right;">
+                    <h2 class="header" style="font-family: Concert One;">calendar page</h2>
+                    <p class="paragraph" style="margin-left:50%; font-family:Merriweather Sans;">Use the calendar page
+                        to look ahead and see what's happening that month!</p>
+                </div>
+                <div class="column" style="align-content:normal;text-align: left;">
+                    <img class="image" src="assets/screenshots/screenshot2.png" alt="Testimonial Image">
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="column" style="align-content:normal;text-align:right;">
+                    <img class="image" src="assets/screenshots/screenshot3.png" alt="App Screenshot">
+                </div>
+                <div class="column" style="align-content:normal;text-align:left;">
+                    <h2 class="header" style="font-family: Concert One;">resources page</h2>
+                    <p class="paragraph" style="margin-right:50%; font-family:Merriweather Sans;">The Resources Page
+                        has quick options that can be used to submit your own event
+                        to Hendrix Today, reserving a room on campus, viewing the daily Cafeteria menu, contacting
+                        Public Safety, or viewing a map of the campus!</p>
+                </div>
 
-
-
-
-    <!-- Social Icons-->
-    <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-    <div class="social-icons">
-        <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-            <a class="btn btn-dark m-3" href="https://github.com/discotraystudios/hendrix-today"><i
-                    class="fab fa-github"></i></a>
+            </div>
+            <div class="space"></div>
         </div>
     </div>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 
-    <h1 style="color: white;"> TEST</h1>
 </body>
 
 </html>
