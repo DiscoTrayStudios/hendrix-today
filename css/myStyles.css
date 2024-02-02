@@ -1,0 +1,140 @@
+.background {
+    background: linear-gradient(#E96B10, black);
+    display: flex;
+}
+.body-background{
+    background-color: rgba(36,36,36);
+    display:flex;
+}
+
+.header {
+    background-color: white;
+    display:flex;
+}
+
+
+h1 {
+    color: #ff6600;
+    font-size: 60px;
+    font-weight: 100;
+    display:flex;
+}
+
+h2 {
+    color: black;
+    font-size: 25px;
+    display:flex;
+}
+
+p {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    display:flex;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:50%;
+    margin-right: 50%; 
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:30%;
+    margin-right:30%;
+}
+.body-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:25%;
+    margin-right: 25%; 
+}
+.body-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:25%;
+    margin-right: 0%;
+}
+.body-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:0%;
+    margin-right: 50%;
+}
+
+.text-padding{
+    display: flex;
+   
+    
+}
+
+.space{
+    display: flex;
+    padding: 50px;
+}
+.tiny-space{
+    display:flex;
+    padding:5px;
+}
+.med-space{
+    display:flex;
+    padding:20px;
+}
+.top-space{
+    padding-top: 50px;
+}
+/*white box around phone image*/
+.rcorners { 
+    width: auto;
+    height: auto;
+    border-radius: 35px;
+    background: white;
+}
+
+
+img{
+    max-width: 300px;
+    min-width: auto;
+    height: auto;
+    
+}
+/*
+.body-padding {
+    margin-left:auto;
+    margin-right:auto;
+}
+*/
+
+
+/* image enlargement animation 
+source code found here: https://www.educative.io/answers/how-to-enlarge-an-image-on-hover-in-html
+
+.image_animation {
+    transition: transform .2s;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.image_animation:hover {
+    transform: scale(1.25);
+}
+*/
+
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
