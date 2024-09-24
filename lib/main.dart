@@ -61,9 +61,11 @@ Future<void> main() async {
 
   final auth = FirebaseAuth.instance;
   final firestore = FirebaseFirestore.instance;
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((_) {
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+      .then((_) {
     runApp(ChangeNotifierProvider(
       create: (context) => AppState(auth, firestore),
       builder: ((context, _) => const RootApp()),
-  ));});
+    ));
+  });
 }

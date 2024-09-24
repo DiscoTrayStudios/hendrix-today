@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -49,26 +46,28 @@ class DefaultFirebaseOptions {
     messagingSenderId: '475115728794',
     projectId: 'hendrix-today-app',
     authDomain: 'hendrix-today-app.firebaseapp.com',
+    databaseURL: 'https://hendrix-today-app-default-rtdb.firebaseio.com',
     storageBucket: 'hendrix-today-app.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCebnqC2fvCuakWMDRm_jNH8lmGu5Uw-HY',
-    appId: '1:475115728794:android:355f37530f18bec7595423',
+    appId: '1:475115728794:android:cf3f2d2c4200ac80595423',
     messagingSenderId: '475115728794',
     projectId: 'hendrix-today-app',
+    databaseURL: 'https://hendrix-today-app-default-rtdb.firebaseio.com',
     storageBucket: 'hendrix-today-app.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyC0EC5SZB1YGrbrfsfTLdkv4A2KL7145yk',
-    appId: '1:475115728794:ios:dce908531bb87af4595423',
+    appId: '1:475115728794:ios:f765e1ad9e56bae4595423',
     messagingSenderId: '475115728794',
     projectId: 'hendrix-today-app',
+    databaseURL: 'https://hendrix-today-app-default-rtdb.firebaseio.com',
     storageBucket: 'hendrix-today-app.appspot.com',
-    iosClientId:
-        '475115728794-natv1dhslluf8lek28987r6e9tnatemp.apps.googleusercontent.com',
-    iosBundleId: 'com.example.hendrixTodayApp',
+    iosClientId: '475115728794-l3jh3fea8gq70t85oe39f7m7qall8mq1.apps.googleusercontent.com',
+    iosBundleId: 'io.github.discotraystudios.hendrixTodayApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -76,9 +75,20 @@ class DefaultFirebaseOptions {
     appId: '1:475115728794:ios:dce908531bb87af4595423',
     messagingSenderId: '475115728794',
     projectId: 'hendrix-today-app',
+    databaseURL: 'https://hendrix-today-app-default-rtdb.firebaseio.com',
     storageBucket: 'hendrix-today-app.appspot.com',
-    iosClientId:
-        '475115728794-natv1dhslluf8lek28987r6e9tnatemp.apps.googleusercontent.com',
+    iosClientId: '475115728794-natv1dhslluf8lek28987r6e9tnatemp.apps.googleusercontent.com',
     iosBundleId: 'com.example.hendrixTodayApp',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDcXKeCaK5T07ac6CVgV97aLyN4Ak70J2c',
+    appId: '1:475115728794:web:d3c2c10be643058a595423',
+    messagingSenderId: '475115728794',
+    projectId: 'hendrix-today-app',
+    authDomain: 'hendrix-today-app.firebaseapp.com',
+    databaseURL: 'https://hendrix-today-app-default-rtdb.firebaseio.com',
+    storageBucket: 'hendrix-today-app.appspot.com',
+  );
+
 }

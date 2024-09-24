@@ -5,6 +5,8 @@ import 'package:hendrix_today_app/objects/event.dart';
 import 'package:hendrix_today_app/widgets/event_calendar.dart';
 import 'package:hendrix_today_app/widgets/event_list.dart';
 import 'package:hendrix_today_app/widgets/floating_nav_buttons.dart';
+import 'package:hendrix_today_app/widgets/permission_widget.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import 'package:provider/provider.dart';
 
@@ -48,6 +50,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
       ),
       body: Column(
         children: [
+          const PermissionWidget(Permission.notification),
           EventCalendar(onSelectDay: _updateSelectedDay),
           Expanded(
             child: EventList(events: eventList),

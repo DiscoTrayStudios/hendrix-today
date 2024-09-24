@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:path/path.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -70,7 +69,7 @@ class _AlertDialogBoxState extends State<AlertDialogBox> {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(left: 130.0),
+              padding: const EdgeInsets.only(left: 130.0),
               child: Row(
                 children: [
                   TextButton(
@@ -104,18 +103,18 @@ class _CheckboxExampleState extends State<CheckboxExample> {
 
   @override
   Widget build(BuildContext context) {
-    Color getColor(Set<MaterialState> states) {
-      const Set<MaterialState> interactiveStates = <MaterialState>{
-        MaterialState.pressed,
-        MaterialState.hovered,
-        MaterialState.focused,
+    Color getColor(Set<WidgetState> states) {
+      const Set<WidgetState> interactiveStates = <WidgetState>{
+        WidgetState.pressed,
+        WidgetState.hovered,
+        WidgetState.focused,
       };
       return Colors.grey.shade300;
     }
 
     return Checkbox(
       checkColor: Colors.black,
-      fillColor: MaterialStateProperty.resolveWith(getColor),
+      fillColor: WidgetStateProperty.resolveWith(getColor),
       value: isChecked,
       //this is where I want to toggle it and remember that the user doesn't want to look at this again
       onChanged: (bool? value) {

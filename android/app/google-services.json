@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "475115728794",
+    "firebase_url": "https://hendrix-today-app-default-rtdb.firebaseio.com",
     "project_id": "hendrix-today-app",
     "storage_bucket": "hendrix-today-app.appspot.com"
   },
@@ -8,6 +9,42 @@
     {
       "client_info": {
         "mobilesdk_app_id": "1:475115728794:android:355f37530f18bec7595423",
+        "android_client_info": {
+          "package_name": "com.example.hendrix_today_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475115728794-689481vdne7vgnuc2oh5nmcs900l1lt9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCebnqC2fvCuakWMDRm_jNH8lmGu5Uw-HY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475115728794-689481vdne7vgnuc2oh5nmcs900l1lt9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "475115728794-l3jh3fea8gq70t85oe39f7m7qall8mq1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.github.discotraystudios.hendrixTodayApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475115728794:android:cf3f2d2c4200ac80595423",
         "android_client_info": {
           "package_name": "io.github.discotraystudios.hendrix_today_app"
         }
@@ -31,7 +68,7 @@
               "client_type": 3
             },
             {
-              "client_id": "475115728794-natv1dhslluf8lek28987r6e9tnatemp.apps.googleusercontent.com",
+              "client_id": "475115728794-l3jh3fea8gq70t85oe39f7m7qall8mq1.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "io.github.discotraystudios.hendrixTodayApp"

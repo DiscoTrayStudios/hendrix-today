@@ -30,5 +30,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:475115728794:ios:dce908531bb87af4595423</string>
+	<key>DATABASE_URL</key>
+	<string>https://hendrix-today-app-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>
