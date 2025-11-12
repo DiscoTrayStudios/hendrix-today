@@ -95,6 +95,7 @@ class EventDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     DateTime date = DateTime(1970);
     DateTime date2 = DateTime(1970);
+    bool parseFailed = false;
 
     if (event.time != null){
       // Parses the time of the event into a start and end time
@@ -103,8 +104,16 @@ class EventDialog extends StatelessWidget {
       times.first = times.first.toUpperCase();
       times.last = times.last.replaceAll(' ', '');
       times.last = times.last.toUpperCase();
-      date= DateFormat("hh:mma").parse(times.first);
-      date2= DateFormat("hh:mma").parse(times.last);
+      try{
+        date= DateFormat("hh:mma").parse(times.first);
+        date2= DateFormat("hh:mma").parse(times.last);
+      }
+      catch(e){
+        parseFailed = true;
+      }
+    }
+    if (date2 == date){
+      date2 = date2.add(const Duration(hours:1));
     }
     return AlertDialog(
       insetPadding: EdgeInsets.symmetric(
@@ -201,20 +210,21 @@ class EventDialog extends StatelessWidget {
                   color: Theme.of(context).colorScheme.primary,
                   onPressed: () {
                     final Event calevent = Event(
-                        title: event.time == null
+                        title: (event.time == null || parseFailed)
                             ? event.title
                             : "${event.title}: ${event.time}",
                         description: event.desc,
                         location: event.location,
-                        startDate: event.time == null
+                        startDate: (event.time == null || parseFailed)
                         ? event.date
                         : DateTime(event.date.year,event.date.month, event.date.day,
                         date.hour, date.minute),
-                        endDate: event.time == null
-                        ? event.date
-                        : DateTime(event.date.year,event.date.month, event.date.day,
+                        endDate: (event.time == null || parseFailed)
+                        ? event.date.add(const Duration(days:1))
+                        : 
+                        DateTime(event.date.year,event.date.month, event.date.day,
                         date2.hour, date2.minute),
-                        allDay: event.time == null
+                        allDay: (event.time == null || parseFailed)
                         ? true
                         : false);
                     Add2Calendar.addEvent2Cal(calevent);

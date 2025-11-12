@@ -186,7 +186,7 @@ class HDXEvent {
                 .add(Duration(hours: hours, minutes: minutes))
             : maybeDate.toDate().add(Duration(hours: hours, minutes: minutes));
     if (maybeDate.toDate().isBefore(DateUtils.dateOnly(DateTime.now()))) {
-      print(title + "! " + hours.toString() + ":" + minutes.toString());
+      print("$title! $hours:$minutes");
       print(maybeDate.toDate());
       print(date);
     }

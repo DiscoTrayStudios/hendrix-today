@@ -67,7 +67,7 @@ class _PermissionState extends State<PermissionWidget>
   Widget build(BuildContext context) {
     return _permissionStatus != PermissionStatus.granted
         ? ColoredBox(
-            color: Color.fromARGB(251, 181, 68, 98),
+            color: const Color.fromARGB(251, 181, 68, 98),
             child: ListTile(
               title: Text(
                 "notifications denied :(",

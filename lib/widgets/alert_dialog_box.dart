@@ -123,7 +123,7 @@ class _CheckboxExampleState extends State<CheckboxExample> {
       onChanged: (bool? value) {
         DoNotShowBox.toggleIsChecked(value!);
         setState(() {
-          isChecked = value!;
+          isChecked = value;
         });
       },
     );
